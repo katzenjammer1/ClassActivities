@@ -7,16 +7,19 @@
 //============================================================================
 
 #include <iostream>
-#include <vector>
+#include "game.h"
 using namespace std;
 
 int main() {
 
 	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
 
-	//add, remove, and iterate over items.
-	game Sally;
-	Sally.add("Potion");
+    game Sally;
+
+    Sally.add("Potion");
+    Sally.add("Sword");
+
+    Sally.print();
 
 	return 0;
 }

@@ -14,19 +14,13 @@ using namespace std;
 
 class game{
 private:
-	vector <string> Items();
+	vector <string> Items;
 public:
-	game();
 
-	//getters
-    const vector<string>& getItems() const;
-	//setters
+    // Methods
+    void add(const string& object);
+    void print();
 
-	//methods
-
-	vector<string> add(string object);
-	game use(vector <string>& Items);
-	game print(vector <string>& Items);
 };
 
 #endif /* GAME_H_ */
